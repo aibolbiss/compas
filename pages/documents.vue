@@ -14,6 +14,10 @@
 	width: 1156px;
 	margin: 0 auto;
 
+	@media (max-width: 375px) {
+		width: 320px;
+    }
+
 	&__bread-crumbs{
 		margin: 20px 0;
 		font-family: "PT Sans", sans-serif;
@@ -31,6 +35,12 @@
 		font-size: 41px;
 		line-height: 49.2px;
 		margin-bottom: 20px;
+
+		@media (max-width: 375px) {
+			text-align: center;
+		    font-size: 22px;
+		    line-height: 25px;
+        }
 	}
 
 	&__description{

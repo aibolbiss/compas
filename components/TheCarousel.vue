@@ -89,6 +89,11 @@ const navigateToDocuments = (block) => {
   /* height: 450px; */
   padding: 0 10px;
   box-sizing: border-box;
+
+  @media (max-width: 375px) {
+	flex: 0 0 calc(100% / 1);
+    max-width: calc(100% / 1);
+  }
 }
 
 .block-content {

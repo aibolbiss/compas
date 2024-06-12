@@ -47,21 +47,40 @@ export default defineComponent({
 	display: flex;
 	align-items: center;
 
+	@media (max-width: 375px) {
+		display: block;
+    }
+
 	&__content{
 		width: 1156px;
 		margin: 0 auto;
 		display: flex;
 		justify-content: space-between;
+
+		@media (max-width: 375px) {
+		    width: inherit;
+			height: 100%;
+			justify-content: center;
+			align-items: center;
+        }
 	}
 
 	&__left, &__right{
 		display: flex;
 		align-items: center;
+
+		@media (max-width: 375px) {
+	       display: block;
+        }
 	}
 
 	&__logo-link{
 		text-decoration: none;
 		margin: 17px 30px 13px 0;
+
+		@media (max-width: 375px) {
+		    margin: 0;
+        }
 	}
 
 	&__link{
@@ -71,6 +90,10 @@ export default defineComponent({
 		font-family: "PT Sans", sans-serif;
 		font-weight: 400;
 		font-size: 18px;
+
+		@media (max-width: 375px) {
+	       display: none;
+        }
 	}
 
 	&__link:last-child {
@@ -84,6 +107,10 @@ export default defineComponent({
 		font-weight: 700;
 		font-size: 18px;
 		text-decoration: none;
+
+		@media (max-width: 375px) {
+	       display: none;
+        }
 	}
 
 	&__button{
@@ -98,6 +125,10 @@ export default defineComponent({
 		border: none;
 		border-radius: 8px;
 		cursor: pointer;
+
+		@media (max-width: 375px) {
+	       display: none;
+        }
 	}
 
 	&__button:hover{

@@ -53,6 +53,10 @@ watch(() => props.modelValue, validate)
 .input-container {
 	display: flex;
     flex-direction: column;
+
+	@media (max-width: 375px) {
+		margin-bottom: 10px;
+    }
 }
 
 .input-label {
@@ -60,6 +64,10 @@ watch(() => props.modelValue, validate)
 	font-weight: 400;
 	font-size: 12px;
 	margin-bottom: 5px;
+
+	@media (max-width: 375px) {
+		font-size: 15px;
+    }
 }
 
 .input-field {
@@ -72,6 +80,10 @@ watch(() => props.modelValue, validate)
 .full{
 	grid-column: span 2; /* Растянуть на две колонки */
     width: 563px;
+
+	@media (max-width: 375px) {
+		width: inherit;
+    }
 }
 .error{
 	color: red;

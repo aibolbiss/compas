@@ -10,6 +10,10 @@
 	width: 1156px;
 	margin: 0 auto;
 
+	@media (max-width: 375px) {
+		width: 320px;
+    }
+
 	&__header{
 		font-family: "PT Sans", sans-serif;
 		font-weight: 700;
@@ -17,12 +21,22 @@
 		line-height: 40.8px;
 		text-align: center;
 		margin-top: 20px;
+
+		@media (max-width: 375px) {
+			text-align: center;
+		    font-size: 22px;
+		    line-height: 25px;
+        }
 	}
 
 	&__image{
 		width: 500px;
 		margin: 0 auto;
 		display: flex;
+
+		@media (max-width: 375px) {
+			width: 300px;
+        }
 	}
 }
 </style>

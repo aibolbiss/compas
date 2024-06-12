@@ -80,12 +80,27 @@ const handleSubmit = () => {
 	display: flex;
 	justify-content: space-between;
 
+	@media (max-width: 375px) {
+		width: 320px;
+		display: block;
+
+		&__right{
+			display: none;
+		}
+    }
+
 	&__header{
 		font-family: "PT Sans", sans-serif;
 		font-weight: 700;
 		font-size: 41px;
 		line-height: 49.2px;
 		margin-bottom: 25px;
+
+		@media (max-width: 375px) {
+			text-align: center;
+		    font-size: 22px;
+		    line-height: 25px;
+        }
 	}
 
 	.three-inputs-grid {
@@ -95,11 +110,19 @@ const handleSubmit = () => {
 		gap: 16px;
 		row-gap: 16px; /* Отступ между строками */
 		column-gap: 30px; /* Отступ между колонками */
+
+		@media (max-width: 375px) {
+			display: block;
+        }
 	}
 
 	.button{
 		display: flex;
 		margin: 15px 0;
+
+		@media (max-width: 375px) {
+			display: block;
+        }
 
 		&__submit{
 			display: flex;
@@ -116,6 +139,11 @@ const handleSubmit = () => {
 		    border-radius: 8px;
 		    cursor: pointer;
 			margin-right: 20px;
+
+			@media (max-width: 375px) {
+			    width: 100%;
+				margin: 0 0 10px 0;
+            }
 		}
 
 		&__submit:hover{
@@ -132,17 +160,22 @@ const handleSubmit = () => {
 			position: relative;
 			top: 2px;
 			left: 5px;
+
+			@media (max-width: 375px) {
+			    width: 15px;
+            }
 		}
 
 		&__link{
 			display: flex;
+			justify-content: center;
 			border: 1px solid #0584FE;
 			border-radius: 8px;
 			padding: 10px 20px;
 			text-decoration: none;
 			font-family: "PT Sans", sans-serif;
 		    font-weight: 400;
-		    font-size: 18px;	
+		    font-size: 18px;
 		}
 
 		&__link:hover{

@@ -23,6 +23,10 @@ export default defineComponent({
 	width: 1156px;
 	margin: 0 auto 100px auto;
 
+	@media (max-width: 375px) {
+		width: 320px;
+    }
+
 	&__header{
 		font-family: "PT Sans", sans-serif;
 		font-weight: 700;
@@ -30,6 +34,13 @@ export default defineComponent({
 		line-height: 40.8px;
 		text-align: center;
 		margin-bottom: 40px;
+
+		@media (max-width: 375px) {
+			text-align: center;
+		    font-size: 22px;
+		    line-height: 25px;
+			margin-bottom: 20px;
+        }
 	}
 }
 </style>

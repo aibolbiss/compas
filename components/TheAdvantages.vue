@@ -46,6 +46,11 @@ export default defineComponent({
 	width: 1156px;
 	margin: 98px auto 85px auto;
 
+	@media (max-width: 375px) {
+		width: 320px;
+		margin: 70px auto;
+    }
+
 	&__header{
 		font-family: "PT Sans", sans-serif;
 		font-weight: 700;
@@ -53,6 +58,11 @@ export default defineComponent({
 		line-height: 40.8px;
 		text-align: center;
 		margin-bottom: 33px;
+
+		@media (max-width: 375px) {
+		    font-size: 22px;
+		    line-height: 25px;
+        }
 	}
 
 	&__list{
@@ -60,6 +70,11 @@ export default defineComponent({
         grid-template-columns: repeat(3, 362px);
         grid-template-rows: auto;
         gap: 30px; /* Пространство между элементами */
+
+		@media (max-width: 375px) {
+		    grid-template-columns: inherit;
+			gap: 20px;
+        }
 
 		&-item{
             height: 151px;
@@ -81,12 +96,20 @@ export default defineComponent({
 			line-height: 21.6px;
 			margin-bottom: 10px;
 			color: #1253A2;
+
+			@media (max-width: 375px) {
+		       font-size: 20px;
+            }
 		}
 		&-description{
 			font-family: "PT Sans", sans-serif;
 		    font-weight: 400;
 		    font-size: 15px;
 			line-height: 18px;
+
+			@media (max-width: 375px) {
+		       font-size: 17px;
+            }
 		}
 	}
 }

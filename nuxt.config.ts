@@ -8,10 +8,13 @@ export default defineNuxtConfig({
 		head: {
 			link: [
 				{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap' }
+			],
+			meta: [
+				{ name: "viewport", content: "width=device-width, initial-scale=1.0"}
 			]
 		}
 	},
 	routes: [
-    { path: '/documents', component: '@/pages/documents.vue' },
+        { path: '/documents', component: '@/pages/documents.vue' },
     ],
 })
