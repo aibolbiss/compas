@@ -46,6 +46,11 @@ export default defineComponent({
 	width: 1156px;
 	margin: 98px auto 85px auto;
 
+	@media (max-width: 1200px) {
+		width: 570px;
+		margin: 70px auto;
+    }
+
 	@media (max-width: 375px) {
 		width: 320px;
 		margin: 70px auto;
@@ -59,9 +64,18 @@ export default defineComponent({
 		text-align: center;
 		margin-bottom: 33px;
 
+		@media (max-width: 1200px) {
+		    font-size: 30px;
+		    line-height: 30px;
+        }
+
+		@media (max-width: 600px) {
+		    font-size: 26px;
+		    line-height: 26px;
+        }
+
 		@media (max-width: 375px) {
 		    font-size: 22px;
-		    line-height: 25px;
         }
 	}
 
@@ -70,6 +84,16 @@ export default defineComponent({
         grid-template-columns: repeat(3, 362px);
         grid-template-rows: auto;
         gap: 30px; /* Пространство между элементами */
+
+		@media (max-width: 1200px) {
+		    grid-template-columns: repeat(2, 362px);
+			gap: 20px;
+			justify-content: center;
+        }
+
+		@media (max-width: 800px) {
+		    grid-template-columns: repeat(1, 362px);
+        }
 
 		@media (max-width: 375px) {
 		    grid-template-columns: inherit;

@@ -23,6 +23,10 @@ export default defineComponent({
 	width: 1156px;
 	margin: 0 auto 100px auto;
 
+	@media (max-width: 1200px) {
+		width: 570px;
+    }
+
 	@media (max-width: 375px) {
 		width: 320px;
     }
@@ -35,8 +39,13 @@ export default defineComponent({
 		text-align: center;
 		margin-bottom: 40px;
 
+		@media (max-width: 1200px) {
+			font-size: 30px;
+		    line-height: 30px;
+			margin-bottom: 30px;
+        }
+
 		@media (max-width: 375px) {
-			text-align: center;
 		    font-size: 22px;
 		    line-height: 25px;
 			margin-bottom: 20px;

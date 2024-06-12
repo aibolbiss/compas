@@ -80,6 +80,21 @@ const handleSubmit = () => {
 	display: flex;
 	justify-content: space-between;
 
+	@media (max-width: 1200px) {
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+		width: 570px;
+    }
+
+	@media (max-width: 600px) {
+		width: 100%;
+		
+		&__right img{
+			width: 400px;
+		}
+    }
+
 	@media (max-width: 375px) {
 		width: 320px;
 		display: block;
@@ -96,10 +111,19 @@ const handleSubmit = () => {
 		line-height: 49.2px;
 		margin-bottom: 25px;
 
+		@media (max-width: 1200px) {
+		font-size: 30px;
+		line-height: 30px;
+		text-align: center;
+        }
+
+		@media (max-width: 600px) {
+		    font-size: 26px;
+		    line-height: 26px;
+        }
+
 		@media (max-width: 375px) {
-			text-align: center;
 		    font-size: 22px;
-		    line-height: 25px;
         }
 	}
 
@@ -111,7 +135,7 @@ const handleSubmit = () => {
 		row-gap: 16px; /* Отступ между строками */
 		column-gap: 30px; /* Отступ между колонками */
 
-		@media (max-width: 375px) {
+		@media (max-width: 600px) {
 			display: block;
         }
 	}

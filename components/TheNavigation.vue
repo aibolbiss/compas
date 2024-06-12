@@ -57,6 +57,13 @@ export default defineComponent({
 		display: flex;
 		justify-content: space-between;
 
+		@media (max-width: 1200px) {
+		    width: 1000px;
+			height: 100%;
+			justify-content: space-around;
+			align-items: center;
+        }
+
 		@media (max-width: 375px) {
 		    width: inherit;
 			height: 100%;
@@ -107,6 +114,10 @@ export default defineComponent({
 		font-weight: 700;
 		font-size: 18px;
 		text-decoration: none;
+
+		@media (max-width: 1200px) {
+	       display: none;
+        }
 
 		@media (max-width: 375px) {
 	       display: none;
